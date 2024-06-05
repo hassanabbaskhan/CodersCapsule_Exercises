@@ -1,0 +1,16 @@
+//type and print the string
+
+using System;
+namespace firstcode
+{
+	class Program
+    {
+        static void Main()  //inside Main method, you can leave it empty as well
+        {
+        	Console.WriteLine("This is C# code");
+          Console.ReadKey();
+        }
+    }
+}
+           
+    
