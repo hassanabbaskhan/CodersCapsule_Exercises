@@ -1,0 +1,17 @@
+// Print the text
+// This is the happiest Day of my life
+
+//Starting the code
+
+using System;
+namespace HappyMoment
+{
+  class TextPrinting
+  {
+    static void Main(string[] args)
+    {
+    Console.WriteLine("This is the happiest Day of my life");
+    Console.ReadKey();
+    }
+  }
+}
