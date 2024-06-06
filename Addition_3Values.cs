@@ -1,3 +1,5 @@
+//Ask user to input 3 numbers, and find its sum..
+
 ﻿using System;
 
 
