@@ -51,7 +51,7 @@ namespace Question_7_to_10_Angle_Conversion
                     double value4 = Convert.ToDouble(Console.ReadLine());
 
                     double result4 = ((9 / 5) * value4) - 32;
-                    Console.WriteLine("{0} degree celcius  = {1} degree Fahrenheit ", value4 - result4);
+                    Console.WriteLine("{0} degree celcius  = {1} degree Fahrenheit ", value4 , result4);
                     break;
 
             }
