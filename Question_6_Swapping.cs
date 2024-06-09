@@ -18,7 +18,7 @@ namespace Question_6_Swapping
             Console.Write("Enter 2nd Number = ");
             num2 = Convert.ToDouble(Console.ReadLine());
 
-            temp = num1;
+            temp = num1;   //Storeing one number temporarily to be recalled later as swapped
             num1 = num2;
             num2 = temp;
 
