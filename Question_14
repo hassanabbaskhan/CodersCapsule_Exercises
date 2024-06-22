@@ -1,0 +1,38 @@
+// 14. Write a program to find the largest of three numbers.
+
+using System;
+namespace LargestNumber
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, c; //same type of datatype declared
+            
+        Console.WriteLine ("Enter Number a =  ");
+        a = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine ("Enter Number b =  ");
+        b = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine ("Enter Number c =  ");
+        c = Convert.ToInt32(Console.ReadLine());
+        
+        if (a > b & a > c)
+            {
+                Console.WriteLine("{0} is largest number", a);
+            }
+        else if (b>a & b>c)
+            {
+            Console.WriteLine("{0} is the largest number",b);
+            }
+        
+        else
+            {
+                Console.WriteLine("{0} is the largest number",c);
+            }
+            Console.ReadKey();
+    
+        }
+    }
+}
