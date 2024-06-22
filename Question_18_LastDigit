@@ -1,0 +1,42 @@
+// 18. Write a program to check if two given non-negative integers have the same last digit.
+
+using System;
+namespace CheckLastDigit
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            start:
+            {
+                /*
+                here we will use the remainder method, we will divide the numbers by 10, and know if their remainders are same.
+                */
+                
+               int a , b;
+               
+               Console.WriteLine("Enter number a:  ");
+               a = Convert.ToInt32(Console.ReadLine());
+               
+               
+               Console.WriteLine("Enter number b:  ");
+               b = Convert.ToInt32(Console.ReadLine());
+               
+               if (a %10 == b % 10)
+               {
+                   Console.WriteLine("Both the numbers' last digit is same");
+                   
+               }
+               
+               else
+               {
+                   Console.WriteLine("Both the numbers' last digit is not same");
+               }
+               Console.ReadKey();
+               Console.Write("\n");
+               
+            }
+            goto start;
+        }
+    }
+}
