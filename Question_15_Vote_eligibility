@@ -1,0 +1,33 @@
+// 15. Write a program to read the age of a candidate and determine whether it is eligible for casting his/her own vote.
+
+using System;
+namespace AgeforVote
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            start:
+            {
+                int age;
+                Console.WriteLine("Enter your age in years: ");
+                age = Convert.ToInt32(Console.ReadLine());
+                
+                if (age >= 18)
+                {
+                    Console.WriteLine("You can cast your vote.");
+                }
+                
+                else
+                {
+                    Console.WriteLine("You can not cast the vote.");
+                }
+           
+                Console.ReadKey();
+                Console.Write("\n");
+            }
+            
+            goto start;
+        }
+    }
+}
