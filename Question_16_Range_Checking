@@ -1,0 +1,31 @@
+// 16. Write a program to check whether entered number is in range 20 to 50.
+
+using System;
+namespace RangeCheck
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            start:
+            {
+                int a;
+                
+                Console.WriteLine("Enter the number a= ");
+                a = Convert.ToInt32(Console.ReadLine());
+                
+                if (a >= 20 & a <= 50)
+                {
+                    Console.WriteLine("{0} is in range of 20 to 50",a);
+                }
+                else
+                {
+                    Console.WriteLine("{0} is not in range of 20 to 50",a);
+                }
+                Console.ReadKey();
+                Console.Write("\n");
+            }
+            goto start;
+        }
+    }
+}
