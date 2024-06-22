@@ -1,4 +1,4 @@
-// 16. Write a program to check whether entered number is in range 20 to 50.
+// 17. Write a program to check which number nearest to the value 100 among two given integers.
 
 using System;
 namespace CheckNearstNo
