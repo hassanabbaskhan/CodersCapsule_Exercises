@@ -1,5 +1,5 @@
-﻿/*
- 22. Write a program to display the first 10 natural numbers using while loops.
+/*
+ 22. Write a program to display the first 10 natural numbers using for loops.
  
  */
 
@@ -12,13 +12,13 @@ namespace Question_22_While_Loop
     {
         static void Main(string[] args)
         {
-            int x = 1;
+            
+            for (int x = 1; x <= 10; x++)
 
-            while (x <= 10 )
             {
+                                     
                 Console.WriteLine(x);
-                x++;
-
+               
             }
             Console.ReadLine();
 
