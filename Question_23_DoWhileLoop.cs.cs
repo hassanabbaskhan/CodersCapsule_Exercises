@@ -1,6 +1,6 @@
 ﻿
 /*
-22. Write a program to display the first 10 natural numbers using do while loop.
+ Write a program to display the first 10 even numbers using while, for and do while loops..
 
  
  */
