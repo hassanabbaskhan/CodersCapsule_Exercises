@@ -1,0 +1,45 @@
+/*
+25. Write a program to get integer values print its factorial value.
+ 
+ */
+
+
+using System;
+namespace Question
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            start:
+                int n;
+                long factorial;   //int datatype will not support this much bigger output value
+                factorial = 1;
+                int i = 1;
+
+                Console.Write("Enter the integer value ");
+                n=Convert.ToInt32(Console.ReadLine());
+
+                if (n < 0)
+
+                {
+                    Console.Write("Factorial does not work for negative integers");
+                }
+
+                else
+                { 
+                    while (i <= n)
+                    {
+                        factorial = factorial * i;
+                        i++;
+                    }
+                    Console.Write("The factorial value of {0} is {1} ",n,factorial);
+                }
+
+ 
+                Console.ReadLine();
+            goto start;
+        }
+        
+    }
+}
