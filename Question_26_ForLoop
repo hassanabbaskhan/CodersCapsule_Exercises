@@ -1,0 +1,27 @@
+/*
+26. Write a program to print CodersCapsule text for 5 times.
+ 
+ */
+
+
+using System;
+namespace Question
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string text = "CodersCapsule";
+
+            for (int i = 0; i <= 5; i++ ) 
+
+            {
+                Console.WriteLine(text);
+            }
+            
+            Console.ReadLine();
+            
+        }
+        
+    }
+}
