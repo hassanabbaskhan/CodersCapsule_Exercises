@@ -1,0 +1,73 @@
+/*
+ 
+30. Write a program to find whether entered number is strong number or not.
+ 
+ */
+
+
+using System;
+
+namespace Question
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        start:
+            Console.Write("Enter the number to check the factorial.  \n");
+            int n =int.Parse(Console.ReadLine());
+
+            if (strongNumber(n))
+            {
+                Console.WriteLine($"{n} is Strong Number");
+
+            }
+            else
+            {
+                Console.WriteLine($"{n} is not a Strong Number");
+            }
+
+
+            goto start;
+        }
+        static int factroial(int number)
+        {
+            
+            
+            int factorial = 1;
+
+            for (int i = 1; i <= number; i++)
+            {
+                factorial =factorial *  i;
+
+            }
+            return factorial;
+        }
+        static bool strongNumber(int number)
+        {
+            int temp = number;
+            int remainder;
+            int sum = 0;
+
+            
+            //for (int i = 0; i >= number; i++)   // i couldn't solve it using the For loop
+            
+            while (number > 0)
+            {
+                remainder = number % 10;
+                sum = sum + factroial(remainder);
+                number = number / 10;
+            }
+
+
+            return sum == temp;
+            
+            // initially this code was not working, because i used if statement to return the statement
+            //if (sum == temp)
+              //  return true;
+        }
+
+    }
+
+}
