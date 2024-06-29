@@ -1,0 +1,72 @@
+/*
+ 
+29. Write a program to find whether entered number is armstrong number or not.
+ 
+ */
+
+
+using System;
+
+namespace Question
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        start:
+
+            Console.Write("\nEnter number: ");
+            int number = int.Parse(Console.ReadLine());
+
+            if (ArmStrong(number))
+            {
+                Console.Write("{0} is an ArmStrong Number.",number);
+            }
+
+            else
+            {
+                Console.Write("{0} is not an ArmStrong Number.",number);
+            }
+        
+            goto start;
+        }
+
+
+        //Creating function to know the no. of digits in a number
+        static int CountDigits (int number)
+        {
+            int count = 0;
+            while (number != 0)
+            {
+                number = number / 10; //keep on dividing by 10 until it's upto or near 1
+                count++; //keep on adding 1 to count until loop completes.
+            }
+                                 
+            return count;  //Console.WriteLine will not be used here
+        }
+
+
+
+        //Creating function to know the sum of raised to power of remainder value in a number
+        static bool ArmStrong(int number)
+        {
+            int sum = 0; //assume sum as zero to start with
+            int tempNumber = number; //store the number for comparison in later end of code
+           
+            int power = CountDigits(number); //this will be used to return the power
+
+            while (number > 0)
+            {
+                int remainder = number % 10;
+
+                sum = sum + (int)(Math.Pow(remainder, power)); //int is used prior to the math function, as it works for double only
+                number = number / 10; //keep on dividing by 10 to get to the base of number
+            }
+
+            return sum == tempNumber;  // no need of if condition here
+
+        }
+
+    }
+
+}
