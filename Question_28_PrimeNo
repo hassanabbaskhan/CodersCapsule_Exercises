@@ -1,0 +1,52 @@
+/*
+28. Write a program to find whether entered number is prime number or not.
+ 
+ */
+
+
+using System;
+namespace Question
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            start:
+
+            Console.Write("Enter a number: ");
+                int number = Convert.ToInt32(Console.ReadLine());
+
+                if (IsPrime(number))
+                {
+                    Console.WriteLine($"{number} is a prime number.");
+                }
+                else
+                {
+                    Console.WriteLine($"{number} is not a prime number.");
+                }
+            goto start;
+        }
+
+
+        // Function to check if a number is prime
+            static bool IsPrime(int number)
+            {
+                // If number is less than 2, it's not a prime number
+                if (number <= 1)
+                    return false;
+
+                // Check for numbers from 2 to the square root of the number
+                for (int i = 2; i <= Math.Sqrt(number); i++)
+                {
+                    // If number is divisible by any i, then it's not prime
+                    if (number % i == 0)
+                        return false;
+                }
+
+                // If no divisors were found, then it's a prime number
+                return true;
+            }
+            
+    }
+
+}
