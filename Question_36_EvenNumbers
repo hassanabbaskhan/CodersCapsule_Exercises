@@ -1,0 +1,31 @@
+/*
+ 
+36. Write a program to print first 10 even numbers.
+
+
+ */
+
+
+using System;
+
+namespace Question
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            for (int i = 2; i<=20; i+=2)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            Console.ReadKey();
+        }
+      
+
+    }
+
+}
