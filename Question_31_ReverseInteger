@@ -1,0 +1,44 @@
+/*
+ 
+31. Write a program to reverse digits.
+For example, if the input is 12345, the output should be 54321.
+
+
+ */
+
+
+using System;
+
+namespace Question
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        start:
+
+            Console.WriteLine("Enter the number ");
+            int number = int.Parse(Console.ReadLine());
+            int InputNumber=number;
+
+            
+            int sum = 0; //assume the sum
+
+            while (number > 0)
+            {
+                int remainder = number % 10;
+                sum = sum * 10 + remainder;
+                number = number / 10;
+
+            }
+
+            Console.WriteLine($"reverse number of {InputNumber} is {sum}");
+
+            goto start;
+        }
+      
+
+    }
+
+}
