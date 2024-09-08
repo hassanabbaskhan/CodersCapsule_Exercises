@@ -1,7 +1,6 @@
 ﻿//Swapping 2 Numbers
 
 using System;
-
 namespace Question_6_Swapping
 {
     class Program
@@ -25,11 +24,7 @@ namespace Question_6_Swapping
             Console.WriteLine("\n\nNumbers after swapping \n"); // output with two lines spacing
             Console.WriteLine("number 1 : " +  num1);
             Console.WriteLine("number 2 : " +  num2);
-
             Console.ReadKey();
-
-
-
         }
     }
 }
