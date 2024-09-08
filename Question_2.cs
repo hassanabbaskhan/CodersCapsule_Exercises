@@ -1,13 +1,10 @@
-﻿using System;
+//2. Write a program to get 3 values from user and print sum of its cube value.
 
+using System;
 
 namespace Addition_of_valueCubes
 {
-
-    //2. Write a program to get 3 values from user and print sum of its cube value.
-
-
-    class addition
+ class addition
     {
         static void Main()
         {
