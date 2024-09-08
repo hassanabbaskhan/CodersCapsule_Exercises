@@ -1,6 +1,11 @@
-﻿using System;
+/*
+7. Write a program to convert degree to radian.
+8. Write a program to convert radian to degree.
+9. Write a program to convert kelvin to Fahrenheit.
+10. Write a program to convert celsius to Fahrenheit.
+*/
 
-
+using System;
 namespace Question_7_to_10_Angle_Conversion
 {
     class Program
