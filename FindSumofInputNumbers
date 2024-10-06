@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    public static void Main()
+    {
+        List<int> numbers = new List<int>(); // To store the user inputs
+        string input;
+        int sum = 0;
+
+        Console.WriteLine("Enter numbers one by one. Type 'done' when you're finished:");
+
+        while (true)
+        {
+            Console.Write("Enter a number (or type 'done' to finish): ");
+            input = Console.ReadLine();
+
+            if (input.ToLower() == "done")
+            {
+                break; // Exit the loop when the user is done
+            }
+
+            try
+            {
+                // Try to convert input to an integer
+                int number = int.Parse(input);
+                numbers.Add(number); // Add number to the list
+                sum += number; // Add to sum
+            }
+            catch (FormatException)
+            {
+                // Handle invalid inputs (e.g., letters, special characters)
+                Console.WriteLine("Invalid input. Please enter a valid number.");
+            }
+        }
+
+        // Display the sum
+        if (numbers.Count > 0)
+        {
+            Console.WriteLine($"The sum of your numbers is: {sum}");
+        }
+        else
+        {
+            Console.WriteLine("No numbers were entered.");
+        }
+    }
+}
